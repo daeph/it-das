@@ -1,0 +1,37 @@
+{
+  "Fachbegriffe": [
+    {
+      "frage": "Was ist SQL?",
+      "antwort": "Structured Query Language – eine Sprache für Datenbankabfragen.",
+      "falsche_antworten": [
+        "Ein Betriebssystem für Server.",
+        "Eine Programmiersprache für Web-Apps.",
+        "Ein Protokoll für Netzwerkkommunikation."
+      ],
+      "kategorie": "Datenbanken",
+      "schwierigkeit": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "frage": "Was ist ein Docker-Container?",
+      "antwort": "Eine isolierte Umgebung für Anwendungen, die alle Abhängigkeiten enthält.",
+      "falsche_antworten": [
+        "Ein Betriebssystem für Server.",
+        "Eine Datenbank für Container.",
+        "Ein Cloud-Dienst von Docker Inc."
+      ],
+      "kategorie": "Docker",
+      "schwierigkeit": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "frage": "Was macht `git commit`?",
+      "antwort": "Speichert Änderungen im lokalen Git-Repository.",
+      "falsche_antworten": [
+        "Lädt Änderungen vom Remote-Repository herunter.",
+        "Erstellt einen neuen Branch.",
+        "Löscht den aktuellen Branch."
+      ],
+      "kategorie": "Git",
+      "schwierigkeit": "⭐⭐⭐⭐⭐"
+    }
+  ]
+}
