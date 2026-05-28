@@ -1,37 +1,407 @@
 {
-  "Fachbegriffe": [
+  "version": "2.0",
+  "beschreibung": "IT-DAS Vokabeltrainer - Fragenpool für Programmiersprachen, Informatik-Abkürzungen, Mathematik und Sonstiges",
+  "kategorien": [
+    "Python",
+    "Java",
+    "C++",
+    "JavaScript",
+    "C#",
+    "PHP",
+    "Ruby",
+    "Go",
+    "Rust",
+    "Swift",
+    "Kotlin",
+    "TypeScript",
+    "Abkürzungen",
+    "Mathematik",
+    "Datenbanken",
+    "Netzwerke",
+    "Betriebssysteme",
+    "DevOps",
+    "Cloud",
+    "Sicherheit",
+    "Algorithmen",
+    "Datenstrukturen",
+    "Webentwicklung",
+    "Versionierung"
+  ],
+  "fragen": [
     {
-      "frage": "Was ist SQL?",
-      "antwort": "Structured Query Language – eine Sprache für Datenbankabfragen.",
-      "falsche_antworten": [
-        "Ein Betriebssystem für Server.",
-        "Eine Programmiersprache für Web-Apps.",
-        "Ein Protokoll für Netzwerkkommunikation."
-      ],
-      "kategorie": "Datenbanken",
-      "schwierigkeit": "⭐⭐⭐⭐⭐"
+      "id": 1,
+      "frage": "Welche dieser Sprachen ist eine interpretierte Programmiersprache?",
+      "kategorien": ["Python", "Programmiersprachen"],
+      "antworten": ["Python", "JavaScript", "Ruby"],
+      "falsche_antworten": ["C++", "Java", "C#", "Rust", "Go"],
+      "erklärung": "Python, JavaScript und Ruby sind interpretierte Sprachen, die zur Laufzeit übersetzt werden. C++, Java, C#, Rust und Go sind kompilierte Sprachen.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
     },
     {
-      "frage": "Was ist ein Docker-Container?",
-      "antwort": "Eine isolierte Umgebung für Anwendungen, die alle Abhängigkeiten enthält.",
+      "id": 2,
+      "frage": "Was bedeutet die Abkürzung 'API'?",
+      "kategorien": ["Abkürzungen", "Netzwerke", "Webentwicklung"],
+      "antworten": ["Application Programming Interface"],
       "falsche_antworten": [
-        "Ein Betriebssystem für Server.",
-        "Eine Datenbank für Container.",
-        "Ein Cloud-Dienst von Docker Inc."
+        "Automated Program Integration",
+        "Advanced Programming Interface",
+        "Application Process Interface",
+        "Automatic Protocol Implementation"
       ],
-      "kategorie": "Docker",
-      "schwierigkeit": "⭐⭐⭐⭐⭐"
+      "erklärung": "API steht für Application Programming Interface - eine Schnittstelle, die es verschiedenen Softwareanwendungen ermöglicht, miteinander zu kommunizieren.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": false
     },
     {
-      "frage": "Was macht `git commit`?",
-      "antwort": "Speichert Änderungen im lokalen Git-Repository.",
+      "id": 3,
+      "frage": "Welche dieser Datenbanken sind NoSQL-Datenbanken?",
+      "kategorien": ["Datenbanken", "Programmiersprachen"],
+      "antworten": ["MongoDB", "Redis", "Cassandra"],
+      "falsche_antworten": ["MySQL", "PostgreSQL", "Oracle", "SQLite"],
+      "erklärung": "MongoDB, Redis und Cassandra sind NoSQL-Datenbanken. MySQL, PostgreSQL, Oracle und SQLite sind relationale (SQL) Datenbanken.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 4,
+      "frage": "Was ist die Big-O-Notation von O(n log n)?",
+      "kategorien": ["Mathematik", "Algorithmen"],
+      "antworten": ["Quicksort", "Merge Sort", "Heap Sort"],
+      "falsche_antworten": ["Bubble Sort", "Insertion Sort", "Lineare Suche", "Binäre Suche"],
+      "erklärung": "Quicksort, Merge Sort und Heap Sort haben eine durchschnittliche Zeitkomplexität von O(n log n). Bubble Sort und Insertion Sort sind O(n²), lineare Suche ist O(n), binäre Suche ist O(log n).",
+      "schwierigkeit": "⭐⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 5,
+      "frage": "Welche Protokolle arbeiten auf der Transportschicht (Layer 4) des OSI-Modells?",
+      "kategorien": ["Netzwerke", "Abkürzungen"],
+      "antworten": ["TCP", "UDP"],
+      "falsche_antworten": ["HTTP", "IP", "DNS", "FTP", "SMTP"],
+      "erklärung": "TCP (Transmission Control Protocol) und UDP (User Datagram Protocol) sind Protokolle der Transportschicht. HTTP, FTP, SMTP sind Anwendungsprotokolle, IP arbeitet auf der Vermittlungsschicht, DNS auf der Anwendungsschicht.",
+      "schwierigkeit": "⭐⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 6,
+      "frage": "Was ist ein Hauptmerkmal von funktionaler Programmierung?",
+      "kategorien": ["Programmiersprachen", "Mathematik"],
+      "antworten": ["Unveränderlichkeit (Immutability)", "Reine Funktionen", "Funktionen als First-Class Citizens"],
       "falsche_antworten": [
-        "Lädt Änderungen vom Remote-Repository herunter.",
-        "Erstellt einen neuen Branch.",
-        "Löscht den aktuellen Branch."
+        "Objektorientierung",
+        "Vererbung",
+        "Kapselung",
+        "Polymorphismus"
       ],
-      "kategorie": "Git",
-      "schwierigkeit": "⭐⭐⭐⭐⭐"
+      "erklärung": "Funktionale Programmierung zeichnet sich durch Unveränderlichkeit, reine Funktionen (keine Nebenwirkungen) und Funktionen als First-Class Citizens aus. Objektorientierung, Vererbung, Kapselung und Polymorphismus sind Konzepte der objektorientierten Programmierung.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 7,
+      "frage": "Welche dieser Sprachen unterstützt TypeScript?",
+      "kategorien": ["TypeScript", "JavaScript", "Webentwicklung", "Programmiersprachen"],
+      "antworten": ["Klassen", "Interfaces", "Generics", "Type Inference"],
+      "falsche_antworten": [
+        "Multiple Vererbung",
+        "Operator Overloading",
+        "Pointer-Arithmetik",
+        "Speicherverwaltung manuell"
+      ],
+      "erklärung": "TypeScript unterstützt objektorientierte Konzepte wie Klassen, Interfaces, Generics und Type Inference. Multiple Vererbung, Operator Overloading, Pointer-Arithmetik und manuelle Speicherverwaltung sind nicht Teil von TypeScript.",
+      "schwierigkeit": "⭐⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 8,
+      "frage": "Was bedeutet 'HTTP'?",
+      "kategorien": ["Abkürzungen", "Netzwerke", "Webentwicklung"],
+      "antworten": ["Hypertext Transfer Protocol"],
+      "falsche_antworten": [
+        "Hypertext Transmission Protocol",
+        "High-Time Transfer Protocol",
+        "Hyperlink Text Protocol",
+        "HTML Transfer Protocol"
+      ],
+      "erklärung": "HTTP steht für Hypertext Transfer Protocol - das Protokoll zur Übertragung von Daten im World Wide Web.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": false
+    },
+    {
+      "id": 9,
+      "frage": "Welche dieser Betriebssysteme sind Unix-ähnlich?",
+      "kategorien": ["Betriebssysteme", "Programmiersprachen"],
+      "antworten": ["Linux", "macOS", "FreeBSD"],
+      "falsche_antworten": ["Windows", "DOS", "Android", "iOS"],
+      "erklärung": "Linux, macOS und FreeBSD sind Unix-ähnliche Betriebssysteme. Windows und DOS basieren auf anderen Kernen. Android und iOS sind mobile Betriebssysteme (Android basiert auf Linux, iOS auf Unix).",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 10,
+      "frage": "Was ist ein Hauptprinzip von REST (Representational State Transfer)?",
+      "kategorien": ["Webentwicklung", "Netzwerke", "Abkürzungen"],
+      "antworten": ["Zustandslosigkeit (Stateless)", "Ressourcenorientierung", "Uniform Interface"],
+      "falsche_antworten": [
+        "Sitzungsverwaltung (Session Management)",
+        "Zustandsbehaftet (Stateful)",
+        "Prozedurorientierung",
+        "Datenbankabstraktion"
+      ],
+      "erklärung": "REST basiert auf den Prinzipien: Zustandslosigkeit, Ressourcenorientierung (alles ist eine Ressource), uniformer Schnittstelle, Selbstbeschreibende Nachrichten und HATEOAS.",
+      "schwierigkeit": "⭐⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 11,
+      "frage": "Welche dieser Datenstrukturen haben eine amortisierte O(1) Zeitkomplexität für Insertion und Deletion?",
+      "kategorien": ["Datenstrukturen", "Algorithmen", "Mathematik"],
+      "antworten": ["Hash-Tabelle", "Dynamisches Array (amortisiert)"],
+      "falsche_antworten": ["Binärer Suchbaum", "Linked List", "Stack", "Queue"],
+      "erklärung": "Hash-Tabellen haben durchschnittlich O(1) für Insertion und Deletion. Dynamische Arrays haben amortisiert O(1) für Insertion am Ende. Binäre Suchbäume haben O(log n), Linked Lists O(1) für Insertion/Deletion an bekannten Positionen, aber O(n) für Suche.",
+      "schwierigkeit": "⭐⭐⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 12,
+      "frage": "Was ist der Unterschied zwischen == und === in JavaScript?",
+      "kategorien": ["JavaScript", "TypeScript", "Programmiersprachen", "Webentwicklung"],
+      "antworten": ["=== prüft auch den Typ (strikte Gleichheit)", "== führt Typumwandlung durch (lose Gleichheit)"],
+      "falsche_antworten": [
+        "== ist schneller als ===",
+        "=== ist nur für Objekte",
+        "== prüft Referenzen",
+        "=== ignoriert den Typ"
+      ],
+      "erklärung": "In JavaScript prüft == (lose Gleichheit) den Wert nach Typumwandlung, während === (strikte Gleichheit) Wert und Typ prüft, ohne Umwandlung.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 13,
+      "frage": "Welche dieser Tools sind Versionskontrollsysteme?",
+      "kategorien": ["Versionierung", "DevOps"],
+      "antworten": ["Git", "Mercurial", "Subversion (SVN)"],
+      "falsche_antworten": ["Docker", "Jenkins", "Maven", "npm"],
+      "erklärung": "Git, Mercurial und Subversion sind Versionskontrollsysteme. Docker ist ein Containerisierungstool, Jenkins ein CI/CD-Tool, Maven ein Build-Tool für Java, npm ein Paketmanager für Node.js.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 14,
+      "frage": "Was bedeutet 'CPU'?",
+      "kategorien": ["Abkürzungen", "Betriebssysteme"],
+      "antworten": ["Central Processing Unit"],
+      "falsche_antworten": [
+        "Computer Processing Unit",
+        "Central Program Unit",
+        "Control Processing Unit",
+        "Central Power Unit"
+      ],
+      "erklärung": "CPU steht für Central Processing Unit - das zentrale Rechenwerk eines Computers, das Befehle ausführt.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": false
+    },
+    {
+      "id": 15,
+      "frage": "Welche dieser Konzepte gehören zur objektorientierten Programmierung?",
+      "kategorien": ["Programmiersprachen", "Mathematik"],
+      "antworten": ["Vererbung", "Kapselung", "Polymorphismus", "Abstraktion"],
+      "falsche_antworten": ["Reine Funktionen", "Unveränderlichkeit", "Lambda-Kalkül", "Monaden"],
+      "erklärung": "Die vier Säulen der OOP sind: Vererbung, Kapselung, Polymorphismus und Abstraktion. Die anderen Konzepte stammen aus der funktionalen Programmierung.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 16,
+      "frage": "Was ist ein Hauptzweck von Docker?",
+      "kategorien": ["DevOps", "Cloud", "Programmiersprachen"],
+      "antworten": ["Containerisierung von Anwendungen", "Isolierung von Abhängigkeiten"],
+      "falsche_antworten": [
+        "Virtuelle Maschinen erstellen",
+        "Betriebssysteme installieren",
+        "Datenbanken verwalten",
+        "Netzwerke konfigurieren"
+      ],
+      "erklärung": "Docker dient primär der Containerisierung von Anwendungen und der Isolierung von Abhängigkeiten, um Anwendungen portabel und reproduzierbar zu machen.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 17,
+      "frage": "Welche dieser Algorithmen sind Sortieralgorithmen?",
+      "kategorien": ["Algorithmen", "Mathematik", "Datenstrukturen"],
+      "antworten": ["Bubble Sort", "Quick Sort", "Merge Sort", "Insertion Sort", "Selection Sort"],
+      "falsche_antworten": ["Binäre Suche", "Tiefensuche", "Breitensuche", "Dijkstra-Algorithmus"],
+      "erklärung": "Bubble Sort, Quick Sort, Merge Sort, Insertion Sort und Selection Sort sind Sortieralgorithmen. Binäre Suche, Tiefensuche, Breitensuche und Dijkstra sind Suchalgorithmen.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 18,
+      "frage": "Was bedeutet 'RAM'?",
+      "kategorien": ["Abkürzungen", "Betriebssysteme"],
+      "antworten": ["Random Access Memory"],
+      "falsche_antworten": [
+        "Read Access Memory",
+        "Rapid Application Memory",
+        "Random Application Module",
+        "Real-Time Access Memory"
+      ],
+      "erklärung": "RAM steht für Random Access Memory - der flüchtige Arbeitsspeicher eines Computers, auf den wahlfrei (random access) zugegriffen werden kann.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": false
+    },
+    {
+      "id": 19,
+      "frage": "Welche dieser Sprachen sind stark typisiert?",
+      "kategorien": ["Programmiersprachen", "TypeScript", "Java", "Rust"],
+      "antworten": ["Java", "Rust", "TypeScript"],
+      "falsche_antworten": ["JavaScript", "Python", "Ruby", "PHP"],
+      "erklärung": "Java, Rust und TypeScript sind stark typisierte Sprachen. JavaScript, Python, Ruby und PHP sind schwach oder dynamisch typisiert.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 20,
+      "frage": "Was ist ein Hauptmerkmal von SQL-Datenbanken?",
+      "kategorien": ["Datenbanken", "Abkürzungen"],
+      "antworten": ["Relationales Modell", "ACID-Transaktionen", "SQL als Abfragesprache"],
+      "falsche_antworten": [
+        "Schemalose Struktur",
+        "Dokumentenorientierung",
+        "Key-Value-Speicherung",
+        "Graph-basierte Abfragen"
+      ],
+      "erklärung": "SQL-Datenbanken (relationale Datenbanken) zeichnen sich durch das relationale Modell, ACID-Transaktionen und die Verwendung von SQL als Abfragesprache aus. Die anderen Optionen beschreiben NoSQL-Datenbanken.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 21,
+      "frage": "Welche dieser Protokolle sind sicher (verschlüsselt)?",
+      "kategorien": ["Netzwerke", "Sicherheit", "Abkürzungen"],
+      "antworten": ["HTTPS", "SSH", "TLS"],
+      "falsche_antworten": ["HTTP", "FTP", "Telnet", "SMTP"],
+      "erklärung": "HTTPS (HTTP Secure), SSH (Secure Shell) und TLS (Transport Layer Security) sind verschlüsselte Protokolle. HTTP, FTP, Telnet und SMTP sind unverschlüsselt (obwohl es sichere Varianten wie SFTP, SMTPS gibt).",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 22,
+      "frage": "Was ist ein Compiler?",
+      "kategorien": ["Programmiersprachen", "Betriebssysteme"],
+      "antworten": ["Ein Programm, das Quellcode in Maschinencode übersetzt"],
+      "falsche_antworten": [
+        "Ein Programm, das Quellcode zur Laufzeit interpretiert",
+        "Ein Texteditor für Programmierer",
+        "Ein Debugging-Tool",
+        "Ein Betriebssystem-Kern"
+      ],
+      "erklärung": "Ein Compiler übersetzt Quellcode einer Programmiersprache in Maschinencode, der direkt vom Prozessor ausgeführt werden kann. Ein Interpreter führt den Quellcode dagegen zur Laufzeit aus.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": false
+    },
+    {
+      "id": 23,
+      "frage": "Welche dieser Cloud-Dienste sind von Amazon?",
+      "kategorien": ["Cloud", "DevOps"],
+      "antworten": ["AWS (Amazon Web Services)", "EC2", "S3", "Lambda"],
+      "falsche_antworten": ["Azure", "Google Cloud", "Heroku", "DigitalOcean"],
+      "erklärung": "AWS, EC2, S3 und Lambda sind Dienste von Amazon Web Services. Azure ist von Microsoft, Google Cloud von Google, Heroku und DigitalOcean sind separate Anbieter.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 24,
+      "frage": "Was bedeutet 'DNS'?",
+      "kategorien": ["Abkürzungen", "Netzwerke"],
+      "antworten": ["Domain Name System"],
+      "falsche_antworten": [
+        "Domain Network Service",
+        "Digital Name Server",
+        "Data Network System",
+        "Domain Name Server"
+      ],
+      "erklärung": "DNS steht für Domain Name System - ein Hierarchisches System zur Auflösung von Domainnamen in IP-Adressen.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": false
+    },
+    {
+      "id": 25,
+      "frage": "Welche dieser Konzepte gehören zur funktionalen Programmierung in Python?",
+      "kategorien": ["Python", "Programmiersprachen", "Mathematik"],
+      "antworten": ["map()", "filter()", "reduce()", "Lambda-Funktionen", "List Comprehensions"],
+      "falsche_antworten": ["for-Schleifen", "while-Schleifen", "Klassen", "Vererbung"],
+      "erklärung": "map(), filter(), reduce(), Lambda-Funktionen und List Comprehensions sind funktionale Programmierkonzepte in Python. for/while-Schleifen und OOP-Konzepte sind imperativ/objektorientiert.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 26,
+      "frage": "Was ist der Unterschied zwischen Stack und Queue?",
+      "kategorien": ["Datenstrukturen", "Algorithmen", "Mathematik"],
+      "antworten": ["Stack: LIFO (Last In First Out)", "Queue: FIFO (First In First Out)"],
+      "falsche_antworten": [
+        "Beide sind LIFO",
+        "Beide sind FIFO",
+        "Stack ist schneller als Queue",
+        "Queue ist immer sortiert"
+      ],
+      "erklärung": "Der Hauptunterschied zwischen Stack und Queue liegt in ihrem Zugriffsmuster: Stack folgt LIFO (Last In First Out), Queue folgt FIFO (First In First Out).",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 27,
+      "frage": "Welche dieser Abkürzungen stehen für Programmiersprachen?",
+      "kategorien": ["Abkürzungen", "Programmiersprachen"],
+      "antworten": ["PHP", "SQL"],
+      "falsche_antworten": ["HTTP", "HTTPS", "FTP", "DNS", "TCP"],
+      "erklärung": "PHP (Hypertext Preprocessor) und SQL (Structured Query Language) sind Programmiersprachen/Absprachen. Die anderen sind Protokolle oder Systeme.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 28,
+      "frage": "Was ist ein Hauptvorteil von TypeScript gegenüber JavaScript?",
+      "kategorien": ["TypeScript", "JavaScript", "Programmiersprachen", "Webentwicklung"],
+      "antworten": ["Statische Typisierung", "Bessere Code-Vervollständigung", "Frühere Fehlererkennung"],
+      "falsche_antworten": [
+        "Schnellere Ausführung",
+        "Kleinere Dateigröße",
+        "Einfachere Syntax",
+        "Keine Abhängigkeiten"
+      ],
+      "erklärung": "TypeScript bietet statische Typisierung, bessere IDE-Unterstützung (Code-Vervollständigung) und frühere Fehlererkennung zur Entwicklungszeit. Die Ausführungsgeschwindigkeit ist ähnlich, da TypeScript zu JavaScript kompiliert wird.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 29,
+      "frage": "Welche dieser Betriebssysteme basieren auf Linux?",
+      "kategorien": ["Betriebssysteme", "Programmiersprachen"],
+      "antworten": ["Ubuntu", "Fedora", "Debian", "CentOS", "Android"],
+      "falsche_antworten": ["Windows", "macOS", "iOS", "FreeBSD"],
+      "erklärung": "Ubuntu, Fedora, Debian, CentOS und Android basieren auf dem Linux-Kernel. Windows, macOS und iOS haben eigene Kernel. FreeBSD basiert auf BSD Unix.",
+      "schwierigkeit": "⭐⭐",
+      "mehrfachantwort": true
+    },
+    {
+      "id": 30,
+      "frage": "Was ist ein Hauptzweck von Git?",
+      "kategorien": ["Versionierung", "DevOps", "Programmiersprachen"],
+      "antworten": ["Versionskontrolle von Code", "Zusammenarbeit in Teams", "Verlaufsverfolgung von Änderungen"],
+      "falsche_antworten": [
+        "Code ausführen",
+        "Anwendungen deployen",
+        "Datenbanken verwalten",
+        "Netzwerke konfigurieren"
+      ],
+      "erklärung": "Git ist ein verteiltes Versionskontrollsystem für die Verwaltung von Codeänderungen, Teamzusammenarbeit und Verlaufsverfolgung.",
+      "schwierigkeit": "⭐",
+      "mehrfachantwort": true
     }
   ]
 }

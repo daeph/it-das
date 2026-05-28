@@ -1,1 +1,13 @@
-PySimpleGUI==4.60.5
+# IT-DAS Vokabeltrainer - Abhängigkeiten
+# Version 2.0
+
+# GUI-Bibliothek
+PySimpleGUI==4.60.5.1
+
+# Standardbibliotheken (werden mit Python mitgeliefert):
+# - json
+# - os
+# - sys
+# - random
+# - datetime
+# - typing
