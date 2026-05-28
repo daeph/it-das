@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# IT-DAS spezifische Dateien
+# Generierte Datenbankdateien
+src/nutzer_daten.json
+src/highscore.json
+src/spaced_repetition.json
+src/ergebnisse.json
